@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midia in HTMl 5</title>
+</head>
+<body>
+    <h1>Dynamic image</h1>
+    <p>Try to open this site in multiple different device or simply increase and decrease the size of your browser.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="images/foto-s.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="images/foto-m.png" type="image/png">
+        <img src="images/foto-l.png" alt="Flexible image">
+    </picture>
+    <h1>Playing audio</h1>
+    <p>Let's learning to reproduce audios in HTMl5.</p>
+    <audio src="midia/happy-mistake.mp3" controls autoplay></audio> <!--MP3 WAV OGG-->
+    <audio preload="metadata" controls > 
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Unfortunately your browser cannot play the audio. <a href="midia/guanacast-33.mp3">Click here to download the MP3 file</a></p>
+    </audio>
+</body>
+</html>

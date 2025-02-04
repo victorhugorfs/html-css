@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of hover</title>
+    <style>
+        div:hover {
+            color: rgb(0, 255, 0);
+        }
+        div > p {
+            display: none;
+        }
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: green;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Example of hover</h1>
+    <p>Hover over the text below</p>
+    <div>
+        Hover over here
+        <p>Hidden text...</p>
+    </div>
+    <p>End of example</p>
+</body>
+</html>
