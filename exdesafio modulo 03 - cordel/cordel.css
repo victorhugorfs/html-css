@@ -1,76 +1,78 @@
 @charset "UTF-8";
 
-body {
-    background-color: rgb(169, 169, 169);
-    display: block;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    min-height: 959px;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --font1 : Verdana, Genava, Tahoma, sans-serif;
+    --font2 : 'Passion One', cursive;
+}
+
+html, body {
+    min-height: 100%;
+    background-color: darkgray;
 }
 
 header {
-    background-color: rgb(0, 0, 0);
+    background-color: black;
     color: white;
-    display: block;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    height: 300px;
     text-align: center;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
+}
+
+header > h1 {
     padding-top: 50px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    unicode-bidi: isolate;
-    width: auto;
+    font-variant: small-caps;
+    font-size: 4em;
 }
 
-p {
-    background-color: rgba(0, 0, 0, 0.514);
+header > p {
+    padding-bottom: 50px;
+
+}
+
+a {
     color: white;
-    display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 33.04px;
-    line-height: 66.08px;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
-    margin-bottom: 0px;
-    margin-inline-end: 0px;
-    margin-inline-start: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    padding-right: 0px;
-    padding-top: 5px;
-    text-shadow: rgb(0, 0, 0) 1px 1px 0px;
-    unicode-bidi: isolate;
+    text-decoration: none;
+    font-weight: bolder;
+
 }
 
-.normal {
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 30px;
+    line-height: 2em;
+    font-family: var(--font2);
+    font-size: 3.5em;
+}
+
+section.normal {
     background-color: white;
     color: black;
-    display: block;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 66.08px;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    padding-top: 95.9px;
-    padding-right: 0px;
-    padding-bottom: 95.9px;
-    padding-left: 30px;
+}
+
+section.image {
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+
+section.image > p {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 5px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
