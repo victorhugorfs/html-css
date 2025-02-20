@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="tables2.css">
+</head>
+<!--Anatomy for large tables
+    Table
+       CAPTION
+       THEAD
+          TR,TD,TH
+       TBODY
+          TR,TD,TH
+       TFOOT
+          TR,TD,TH  -->
+<body>
+    <h1>Use of large tables</h1>
+    <table>
+        <caption>List</caption>
+        <thead>
+           <tr>
+            <th scope="col">State</th>
+            <th scope="col">Population</th>
+           </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th class="title">São Paulo</th>
+                <th class="title">45 973 190</th>
+            </tr>
+            <tr>
+                <th class="title">Minas Gerais</th>
+                <th class="title">21 322 692</th>
+            </tr>
+            <tr>
+                <th class="title">Rio de Janeiro</th>
+                <th class="title">17 219 679</th>
+            </tr>
+            <tr>
+                <th class="title">Bahia</th>
+                <th class="title">14 850 513</th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total inhabitants</th>
+                <td><strong>99,366,074</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
