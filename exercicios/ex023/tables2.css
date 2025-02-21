@@ -15,10 +15,16 @@ tbody > tr:nth-child(even) { /* odd,even,2n,2n-1*/
 table {
     width: 500px;
     border-collapse: collapse;
+    position: relative;
 }
 td, th {
     border: 1px solid black;
     padding: 10px;
+}
+thead > tr > th {
+    position: sticky;
+    top: 0;
+    background-color: gray;
 }
 thead {
     background-color: gray;
