@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form Example</h1>
+    <form action="register.php" method="get" autocomplete="on">
+        <p>
+            <label for="iemail">Email</label>
+            <input type="email" name="email" id="iemail" required autocomplete="email">
+        </p>
+        <p>
+            <label for="itel">Telephone</label>
+            <input type="tel" name="tel" id="itel" autocomplete="tel" required>
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset" pattern="^[0-9]{4}-[0-9]{4}$">
+        </p>
+    </form>
+    <!--Study more about RegEx (Regular Expressions)-->
+</body>
+</html>
