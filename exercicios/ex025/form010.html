@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form Example</h1>
+    <form action="register.php" method="get" autocomplete="on"></form>
+
+    <p>
+        <label for="iyear">What year were you born?</label>
+        <input type="number" name="Year" id="iyear" min="1900" max="2025" oninput="calcAge()">
+    </p>
+
+    <p>
+        <label for="iyear">Your age is:</label>
+        <output id="iyear">0</output>
+    </p>
+
+    <p>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </p>
+
+    <script>
+        function calcAge() {
+            let current = new Date().getFullYear()
+            iyear.innerHTML = Number(current) - Number(iyear.value)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form Example</h1>
+    <form action="register.php" method="get" autocomplete="on"></form>
+    <p>
+        <label for="ista">State</label>
+        <select name="state" id="ista">
+            <optgroup label="Southeast">
+                <option value="FL">Florida</option>
+                <option value="FL">Miami</option>
+                <option value="NY">New York</option>
+            </optgroup>
+
+            <optgroup label="West">
+                <option value="Cl">Los Angeles</option>
+                <option value="CL">San Francisco</option>
+                <option value="CL">San Diego</option>
+            </optgroup>
+        </select>
+    </p>
+
+    <p>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </p>
+</body>
+</html>
